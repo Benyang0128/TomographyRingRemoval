@@ -66,7 +66,7 @@ cd C:\Users\name\OneDrive\Desktop\OpenCL
 ```
 --------------------------------------------------------------
 
-Setup G++, need to locate your computer tiff library and OpenCL location:
+Setup G++, need to locate your computer tiff library and OpenCL location(Follow your path location):
 ```
 g++ -o recon_ring_remover.1.1.0 main.cpp image_filters.cpp image_transforms.cpp image_io.cpp -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\include" -L"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64" -I"C:\Users\PC\OneDrive\Desktop\RingRemoval_OpenCL\vcpkg\installed\x64-windows\include" -L"C:\Users\PC\OneDrive\Desktop\RingRemoval_OpenCL\vcpkg\installed\x64-windows\lib" -lopencv_core -lopencv_imgproc -lopencv_imgcodecs -lopencv_highgui -lopencv_videoio -ltiff -lOpenCL -Wno-deprecated-declarations
 ```
