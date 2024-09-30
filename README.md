@@ -13,10 +13,16 @@ Input images are all included in this project. However, mirror copy of the image
 * The executable is included together with the source code.
 * Executable named `recon_ring_remover_v6`
 
-### Compile
+### Compile (Linux / Unix-based)
 Run the following command to compile the program.
 ```
 g++ -w -o recon_ring_remover_v6 main.cpp image_filters.cpp image_transforms.cpp image_io.cpp -fopenmp `pkg-config --cflags --libs opencv4`
+```
+
+### Compile (Windows)
+Run the following command to compile the program.
+```
+g++ -o recon_ring_remover_v6 main.cpp image_filters.cpp image_transforms.cpp image_io.cpp -I"C:\OpenCV\opencv\build\include" -L"C:\OpenCV\opencv\build\x64\vc15\lib" -lopencv_world410 -fopenmp
 ```
 *Note: Windows might need different option to compile with OpenCV
 
