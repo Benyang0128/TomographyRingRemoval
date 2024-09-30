@@ -76,61 +76,61 @@ g++ -o recon_ring_remover.1.1.0 main.cpp image_filters.cpp image_transforms.cpp 
 ### Usage
 Test Out:
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 1 1 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 1 1 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 2 2 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 2 2 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 3 3 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 3 3 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 4 4 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 4 4 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 5 5 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 5 5 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 6 6 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 6 6 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 7 7 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 7 7 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 8 8 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 8 8 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 9 9 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 9 9 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 10 10 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 10 10 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 11 11 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 11 11 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 12 12 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 12 12 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 13 13 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 13 13 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 14 14 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 14 14 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 15 15 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 15 15 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 16 16 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 16 16 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 20 20 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 20 20 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 21 21 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 21 21 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 22 22 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input/ ./images/output/ rec_ out_opencl_ 22 22 0 0 30 -300 300 300 30 1
 ```
 --------------------------------------------------------------
 
