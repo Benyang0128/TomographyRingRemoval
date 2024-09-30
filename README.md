@@ -24,18 +24,18 @@ Run the following command to compile the program.
 ```
 g++ -o recon_ring_remover_v6 main.cpp image_filters.cpp image_transforms.cpp image_io.cpp -I"C:\OpenCV\opencv\build\include" -L"C:\OpenCV\opencv\build\x64\vc15\lib" -lopencv_world410 -fopenmp
 ```
-*Note: Windows might need different option to compile with OpenCV
+*Note: Windows might have different ways and options to compile with OpenCV
 
 ### Usage (Linux / Unix-based)
 Run the executable with following command:
 ```
-./recon_ring_remover_v6 input/ output/ rec_ out_openmp_ 1 1 0 0 30 -300 300 300 30 1
+./recon_ring_remover_v6 ../images/input images/output/ rec_ out_openmp_ 1 1 0 0 30 -300 300 300 30 1
 ```
 
 ### Usage (Windows):
 Run the executable with following command:
 ```
-recon_ring_remover_v6 input/ output/ rec_ out_openmp_ 1 1 0 0 30 -300 300 300 30 1
+recon_ring_remover_v6 ../images/input/ images/output/ rec_ out_openmp_ 1 1 0 0 30 -300 300 300 30 1
 ```
 
 ### Usage hint
@@ -76,61 +76,61 @@ g++ -o recon_ring_remover.1.1.0 main.cpp image_filters.cpp image_transforms.cpp 
 ### Usage
 Test Out:
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 1 1 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 1 1 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 2 2 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 2 2 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 3 3 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 3 3 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 4 4 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 4 4 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 5 5 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 5 5 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 6 6 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 6 6 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 7 7 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 7 7 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 8 8 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 8 8 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 9 9 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 9 9 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 10 10 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 10 10 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 11 11 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 11 11 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 12 12 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 12 12 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 13 13 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 13 13 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 14 14 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 14 14 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 15 15 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./images/output rec_ out_opencl_ 15 15 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 16 16 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 16 16 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 20 20 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 20 20 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 21 21 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 21 21 0 0 30 -300 300 300 30 1
 ```
 ```
-recon_ring_remover.1.1.0 ./InputImages/ ./OutputImages/ rec_ out_opencl_ 22 22 0 0 30 -300 300 300 30 1
+recon_ring_remover.1.1.0 ../images/input ./OutputImages/ rec_ out_opencl_ 22 22 0 0 30 -300 300 300 30 1
 ```
 --------------------------------------------------------------
 
@@ -178,14 +178,14 @@ python image_compare.py
 ### Usage
 Test Output Individually:
 ```
-ring_remover.exe . . rec_ test_out 1 1 0 0 30 -300 300 300 30 1
+ring_remover.exe ../../../images/input/ images/output rec_ test_out 1 1 0 0 30 -300 300 300 30 1
 ```
 ```
-ring_remover.exe . . rec_ test_out 2 2 0 0 30 -300 300 300 30 1
+ring_remover.exe ../../../images/input/ images/output rec_ test_out 2 2 0 0 30 -300 300 300 30 1
 ```
 ….
 ```
-ring_remover.exe . . rec_ test_out 16 16 0 0 30 -300 300 300 30 1
+ring_remover.exe ../../../images/input/ images/output rec_ test_out 16 16 0 0 30 -300 300 300 30 1
 ```
 --------------------------------------------------------------
 

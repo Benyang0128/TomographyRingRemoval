@@ -8,8 +8,8 @@ import tkinter as tk
 from tkinter import ttk
 
 # Paths
-input_path = r"C:\Users\PC\source\repos\CudaRuntime4\CudaRuntime4\InputImages"
-output_path = r"C:\Users\PC\source\repos\CudaRuntime4\CudaRuntime4\OutputImages"
+input_path = r"../../../images/input"
+output_path = r"images/output"
 executable = "./ring_remover.exe"  # Assuming executable is in current directory
 
 # Parameters for the C++ program
@@ -43,14 +43,14 @@ def run_cpp_program(image_num):
         str(angular_min),
         str(verbose)
     ]
-    
+
     # Run the C++ program and capture its output
     result = subprocess.run(command, capture_output=True, text=True)
-    
+
     if result.returncode != 0:
         print(f"Error running C++ program for image {image_num}: {result.stderr}")
         return None, None
-    
+
     # Parse the output to extract CPU and GPU times
     output_lines = result.stdout.split('\n')
     cpu_time = None
@@ -60,7 +60,7 @@ def run_cpp_program(image_num):
             cpu_time = float(line.split(":")[1].strip().split()[0])
         elif "GPU ring filtering time:" in line:
             gpu_time = float(line.split(":")[1].strip().split()[0])
-    
+
     return cpu_time, gpu_time
 
 # Record times for CPU and GPU
@@ -72,7 +72,7 @@ print(f"------------------------------------------------------------------------
 for i in range(first_image_num, last_image_num + 1):
     print(f"\nRing Removal Computation Time for Image {i} [rec_{i}.tif]:")
     print(f"{'Run':<5} {'CPU Time (s)':<15} {'GPU Time (s)':<15} {'Speedup':<10}")
-    
+
     for run_num in range(1, 21):  # Number of run times, adjust as needed
         cpu_time, gpu_time = run_cpp_program(i)
         if cpu_time is not None and gpu_time is not None:
@@ -80,7 +80,7 @@ for i in range(first_image_num, last_image_num + 1):
             gpu_times[i].append(gpu_time)
             speedup = cpu_time / gpu_time if gpu_time > 0 else float('inf')
             print(f"{run_num:<5} {cpu_time:<15.4f} {gpu_time:<15.4f} {speedup:<.2f}x")
-    
+
     # Calculate and print average times after all runs for the current image
     avg_cpu_time = np.mean(cpu_times[i])
     avg_gpu_time = np.mean(gpu_times[i])
@@ -137,20 +137,20 @@ axs = axs.flatten()
 
 for i in range(first_image_num, last_image_num + 1):
     runs = range(1, len(cpu_times[i]) + 1)
-    
+
     # Select the current subplot (each image has its own graph)
     ax = axs[i - 1] if last_image_num > 1 else axs  # Handle single subplot case
-    
+
     ax.plot(runs, cpu_times[i], label=f'CPU Time (Image {i})', color='blue')
     ax.plot(runs, gpu_times[i], label=f'GPU Time (Image {i})', color='orange', linestyle='--')
-    
+
     ax.set_xlabel('Run Number')
     ax.set_ylabel('Time (seconds)')
     ax.set_title(f'CPU vs GPU Computation Time for Image {i}')
     ax.legend()
 
 # Adjust layout and spacing
-plt.subplots_adjust(hspace=1.0, wspace=1.0)   
+plt.subplots_adjust(hspace=1.0, wspace=1.0)
 
 # Render the plot on a canvas
 canvas_plot = FigureCanvasTkAgg(fig, second_frame)

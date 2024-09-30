@@ -3,9 +3,9 @@ import subprocess
 import numpy as np
 
 # Paths
-input_path = "input/"
-output_path = "output/"
-executable = "./recon_ring_remover_v3"
+input_path = "../imagesinput/"
+output_path = "images/output/"
+executable = "./recon_ring_remover_v6"
 
 # Parameters for the C++ program
 first_image_num = 1
@@ -61,18 +61,18 @@ print("-" * 60)
 with open('openmp_results.txt', 'w') as f:
     f.write(f"{'Image':<10}{'Serial Time (s)':<20}{'Parallel Time (s)':<20}{'Speedup':<10}\n")
     f.write("-" * 60 + "\n")
-    
+
     for i in range(first_image_num, last_image_num + 1):
         for run_num in range(1, 21):
             serial_time, parallel_time = run_cpp_program(i)
             if serial_time is not None and parallel_time is not None:
                 serial_times[i].append(serial_time)
                 parallel_times[i].append(parallel_time)
-        
+
         avg_serial_time = np.mean(serial_times[i])
         avg_parallel_time = np.mean(parallel_times[i])
         speedup = avg_serial_time / avg_parallel_time if avg_parallel_time > 0 else float('inf')
-        
+
         print(f"{i:<10}{avg_serial_time:<20.4f}{avg_parallel_time:<20.4f}{speedup:<10.2f}")
         f.write(f"{i:<10}{avg_serial_time:<20.4f}{avg_parallel_time:<20.4f}{speedup:<10.2f}\n")
 
